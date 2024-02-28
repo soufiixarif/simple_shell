@@ -21,7 +21,7 @@ char *getlinepath(char *linecommande)
     fold = strtok(path, ":");
     while (fold)
     {
-        full_cmd = malloc(ft_strlen(fold) + ft_strlen (linecommande) + 1 + 1);
+        full_cmd = malloc(ft_strlen(fold) + ft_strlen (linecommande) + 2);
         if (full_cmd)
         {
             ft_strcpy(full_cmd,fold);

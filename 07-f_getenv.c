@@ -1,7 +1,7 @@
 #include "shell.h"
 char *f_getenv(char *var)
 {
-    char *key, *ptr, *val, *tmp;
+    char *key, *ptr, *val, *tmp = NULL;
     int i = 0;
 
     while (environ[i])
@@ -15,7 +15,8 @@ char *f_getenv(char *var)
             free(ptr);
             return (tmp);
         }
-        free (tmp), tmp = NULL;
+        else 
+            free (tmp), tmp = NULL;
         i++;
     }
     return (NULL);
