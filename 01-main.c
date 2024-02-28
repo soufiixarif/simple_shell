@@ -19,9 +19,6 @@ int main(int ac, char **av)
         com = split(line);
         if (!com)
             continue;
-        if (is_built(com[0]))
-            handelbuilt(com,av,status,index);
-        else
-            status = ft_execute(com, av, index);
+        status = ft_execute(com, av, index);
     }
 }
