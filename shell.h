@@ -27,7 +27,6 @@ void exit_sh(char **com, int status);
 void printf_env(char **com,int status);
 
 
-//libft Functions
 char	*ft_strdup(const char *s1);
 size_t	ft_strlen(const char *s);
 void freearr(char **arr);

@@ -9,7 +9,7 @@ int main(int ac, char **av)
     while(1)
     {
         line = ft_getline();
-        if (!line) // reach end of file ctr + D
+        if (!line)
         {
             if (isatty(STDIN_FILENO))
                 write(STDOUT_FILENO, "\n", 1);
