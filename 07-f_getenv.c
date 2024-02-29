@@ -1,9 +1,4 @@
 #include "shell.h"
-/**
-*
-*
-*
-**/
 char *f_getenv(char *var)
 {
     char *key, *ptr, *val, *tmp = NULL;

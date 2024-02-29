@@ -1,10 +1,4 @@
 #include "shell.h"
-/**
-*
-*
-*
-*
-**/
 char	*ft_strdup(const char *s1)
 {
 	char	*p;

@@ -1,10 +1,5 @@
 #include "shell.h"
-/**
-*
-*
-*
-**/
-int ft_execute(char **com, char **av, int index)
+int ft_execute(char **com, char **av,int index)
 {
     pid_t child;
     int status;
@@ -14,18 +9,16 @@ int ft_execute(char **com, char **av, int index)
     if (!cmd)
     {
         errormsg(av[0], com[0], index);
-        free(cmd);
         freearr(com);
         return (127);
     }
     child = fork();
     if (child == 0)
     {
-        if (execve(com[0],com,environ) == -1)
+        if (execve(cmd,com,environ) == -1)
         {
             free(cmd), cmd = NULL;
-            freearr(com);
-        }
+            freearr(com);        }
     }
     else
     {
