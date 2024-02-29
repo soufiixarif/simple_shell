@@ -1,5 +1,10 @@
 #include "shell.h"
-int ft_execute(char **com, char **av,int index)
+/**
+*
+*
+*
+**/
+int ft_execute(char **com, char **av, int index)
 {
     pid_t child;
     int status;
@@ -9,6 +14,7 @@ int ft_execute(char **com, char **av,int index)
     if (!cmd)
     {
         errormsg(av[0], com[0], index);
+        free(cmd);
         freearr(com);
         return (127);
     }

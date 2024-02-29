@@ -1,4 +1,10 @@
 #include "shell.h"
+/**
+*
+*
+*
+*
+**/
 void freearr(char **arr)
 {
     int i = 0;

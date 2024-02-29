@@ -1,4 +1,10 @@
 #include "shell.h"
+/**
+*
+*
+*
+*
+**/
 char *getlinepath(char *linecommande)
 {
     char *path, *full_cmd, *fold;

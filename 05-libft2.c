@@ -1,4 +1,9 @@
 #include "shell.h"
+/**
+*nbrlen - number length
+*@n: integer
+*Return: int
+**/
 static int nbrlen(int n)
 {
     int c = 0;
