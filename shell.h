@@ -16,7 +16,7 @@ extern char **environ;
 
 char *ft_getline(void);
 char **split(char *line);
-int ft_execute(char ** com, char **av, int index);
+int ft_execute(char **com, char **av, int index);
 void freearr(char **arr);
 char *f_getenv(char *var);
 char *getlinepath(char *linecommande);
@@ -24,7 +24,7 @@ void errormsg(char *sh, char *cmd, int index);
 int is_built(char *cmd);
 void handelbuilt(char **com, char **av, int status, int index);
 void exit_sh(char **com, int status);
-void printf_env(char **com,int status);
+void printf_env(char **com, int status);
 
 
 char	*ft_strdup(const char *s1);

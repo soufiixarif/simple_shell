@@ -1,9 +1,16 @@
 #include "shell.h"
-char	*ft_strdup(const char *s1)
+/**
+*ft_strdup - duplicates string
+*@s1: string to usre
+*Return: char
+**/
+char *ft_strdup(const char *s1)
 {
 	char	*p;
-	int		i;
-	int		len;
+	int i;
+	int len;
+
+	p = NULL;
 
 	i = -1;
 	len = ft_strlen((char *)s1);
@@ -15,6 +22,11 @@ char	*ft_strdup(const char *s1)
 	*(p + i) = 0;
 	return (p);
 }
+/**
+*ft_strlen - string length
+*@s: string
+*Return: size_t
+**/
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
@@ -24,6 +36,12 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
+/**
+*ft_strcmp - compares string
+*@s1: string 1
+*@s2: string 1
+*Return: int
+**/
 int ft_strcmp(char *s1, char *s2)
 {
 	int i = 0;
@@ -32,6 +50,12 @@ int ft_strcmp(char *s1, char *s2)
 		i++;
 	return (s1[i] - s2[i]);
 }
+/**
+*ft_strcat - concatentates string
+*@dest: destination
+*@src: source
+*Return: char
+**/
 char *ft_strcat(char *dest, char *src)
 {
 	int i, j;
@@ -47,16 +71,22 @@ char *ft_strcat(char *dest, char *src)
 		j++;
 	}
 	dest[i] = '\0';
-	return(dest);
+	return (dest);
 }
-
+/**
+*ft_strcpy - copies a string
+*@s1: string one
+*@s2: string two
+*Return: char
+**/
 char *ft_strcpy(char *s1, char *s2)
 {
 	int i = 0;
+
 	while (s2[i])
 	{
 		s1[i] = s2[i];
 		i++;
 	}
-	return(s1);
+	return (s1);
 }
