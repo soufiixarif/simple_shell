@@ -46,7 +46,7 @@ char *ft_strcat(char *dest, char *src)
 	while (dest[i])
 		i++;
 	j = 0;
-	while (src[i])
+	while (src[j])
 	{
 		dest[i] = src[j];
 		i++;
