@@ -30,7 +30,7 @@ int ft_execute(char **com, char **av, int index)
 
 	if (child == 0)
 	{
-		if (execve(com[0], com, environ) == -1)
+		if (execve(cmd, com, environ) == -1)
 		{
 			free(cmd), cmd = NULL;
 			freearr(com);

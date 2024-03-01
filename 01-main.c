@@ -22,14 +22,15 @@ int main(int ac, char **av)
 			return (status);
 		}
 
-	index++;
-	com = split(line);
-	if (!com)
-	{
-		free(line);
-		free(com);
-		continue;
-	}
-	status = ft_execute(com, av, index);
+		index++;
+		com = split(line);
+		if (!com)
+			continue;
+		if (is_built(com[0]))
+		{
+			handelbuilt(com,av,&status,index);
+		}
+		else
+			status = ft_execute(com, av, index);
 	}
 }
