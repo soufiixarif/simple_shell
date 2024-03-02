@@ -28,7 +28,7 @@ int main(int ac, char **av)
 			continue;
 		if (is_built(com[0]))
 		{
-			handelbuilt(com,av,&status,index);
+			handelbuilt(com, av, &status, index);
 		}
 		else
 			status = ft_execute(com, av, index);

@@ -35,9 +35,15 @@ void errormsg(char *sh, char *cmd, int index)
 	free(i);
 
 }
+/**
+*isunsigned -unsigned digits
+*@s: unsigned digit
+*Return: int
+**/
 int isunsigned(char *s)
 {
 	int i = 0;
+
 	if (!s)
 		return (0);
 	while (s[i])
