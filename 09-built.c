@@ -51,7 +51,7 @@ void exit_sh(char **com, int *status, char **av, int index)
 
 	if (com[1])
 	{
-		if (isunsigned(com[1]))
+		if (intwithsign(com[1]))
 		{
 			exval = ft_atoi(com[1]);
 		}

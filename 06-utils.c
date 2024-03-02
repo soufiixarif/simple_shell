@@ -36,11 +36,11 @@ void errormsg(char *sh, char *cmd, int index)
 
 }
 /**
-*isunsigned -unsigned digits
+*intwithsign -unsigned digits
 *@s: unsigned digit
 *Return: int
 **/
-int isunsigned(char *s)
+int intwithsign(char *s)
 {
 	int i = 0;
 

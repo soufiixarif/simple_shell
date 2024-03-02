@@ -27,14 +27,14 @@ void exit_sh(char **com, int *status, char **av, int index);
 void printf_env(char **com, int *status);
 
 
-char	*ft_strdup(const char *s1);
+char *ft_strdup(const char *s1);
 size_t	ft_strlen(const char *s);
 void freearr(char **arr);
 int ft_strcmp(char *s1, char *s2);
 char *ft_strcat(char *dest, char *src);
 char *ft_strcpy(char *s1, char *s2);
 char    *ft_itoa(int nbr);
-int isunsigned(char *s);
+int intwithsign(char *s);
 int     ft_atoi(const char *str);
 
 
